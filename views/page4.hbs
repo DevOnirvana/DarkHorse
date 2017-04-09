@@ -1,0 +1,25 @@
+<div style="text-align:center">
+  <a href="/logout">Log Out</a>
+</div>
+<div class="container" style="margin-top:250px">
+<div class="well">
+<form method='post' action='/submit'>
+<div>
+    <section>
+        <article class="item">
+            <div><b>{{item.num}}</b>. {{ item.question }}?<br></div>
+            <div class="well">
+            <div><input type="radio" name="option" value="{{ item.option1 }} "> {{ item.option1 }}.<br></div>
+            <div><input type="radio" name="option" value="{{ item.option2 }} "> {{ item.option2 }}.<br></div>
+            <div><input type="radio" name="option" value="{{ item.option3 }} "> {{ item.option3 }}.<br></div>
+            <div><input type="radio" name="option" value="{{ item.option4 }}">  {{ item.option4 }}.<br></div>
+            </div>
+        </article>
+      </section>
+</div>
+<div style="text-align:center">
+<button type="submit" class="btn btn-primary">Next Question</button>
+</div>
+</form>
+</div>
+</div>

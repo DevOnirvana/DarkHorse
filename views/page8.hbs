@@ -1,0 +1,23 @@
+<div class="container" style="text-align:center">
+  <a href="/deleteName">Delete all registered people from database.</a>
+  <h2 style="color:green">People registered</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><b>Name</b></th>
+        <th><b>Scholar Id</b></th>
+        <th><b>Score</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{# each items}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.id}}</td>
+        <td>{{this.score}}</td>
+      </tr>
+      {{/each}}
+      <tr>
+    </tbody>
+  </table>
+</div>

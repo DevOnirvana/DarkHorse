@@ -1,0 +1,27 @@
+<div style="text-align:left" class="container">
+<h3 style="color:green">Data you entered</h3>
+<div>
+  <ul class="list-group">
+    <div>
+    {{# each items }}
+    <ul class="list-group">
+        <div class="well">
+
+
+             <li class="list-group-item">Question no. <b>{{ this.num }}</b></li>
+             <li class="list-group-item">Question: {{ this.question }}</li>
+             <li class="list-group-item">1: {{ this.option1 }}</li>
+             <li class="list-group-item">2: {{ this.option2 }}</li>
+             <li class="list-group-item">3: {{ this.option3 }}</li>
+             <li class="list-group-item">4: {{ this.option4}} </li>
+            <li class="list-group-item">Correct Answer: {{ this.optionCorrect }}</li>
+
+        </div>
+      </ul>
+
+    {{/each}}
+    <br />
+    <br />
+  </div>
+</div>
+</div>

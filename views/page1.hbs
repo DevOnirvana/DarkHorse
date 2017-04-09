@@ -1,0 +1,78 @@
+<div>
+<div class= "well" style="text-align:center"text>
+<h1 style="color:green">Welcome to the Aptitude Test Portal</h1>
+</div>
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class= "well">
+        <div class= "well" style="text-align:justify,text-decoration: underline">
+  <h6 style="color:red">Please enter your credentials below to register</h6>
+</div>
+<form action="/register" method="post">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" />
+  </div>
+  <div class="form-group">
+    <label for="id">Scholar-Id</label>
+    <input type="text" class="form-control" id="id" name="id" />
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class= "well">
+  <div class= "well" style="text-align:justify,text-decoration: underline">
+  <h6 style="color:red">You can login here in case you are registered</h6>
+</div>
+<form action="/login" method="post">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" />
+  </div>
+  <div class="form-group">
+    <label for="id">Scholar-Id</label>
+    <input type="text" class="form-control" id="id" name="id" />
+  </div>
+  <button type="submit" class="btn btn-primary" >Login</button>
+</form>
+</section>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class= "well">
+<div class= "well" style="text-align:justify,text-decoration: underline">
+<h6 style="color:red">Login as Admin</h6>
+</div>
+<form action="/adminLogin" method="post">
+  <div class="form-group">
+    <label for="name">Username</label>
+    <input type="text" class="form-control" id="username" name="username" />
+  </div>
+  <div class="form-group">
+    <label for="id">Password</label>
+    <input type="password" class="form-control" id="password" name="password" />
+  </div>
+  <button type="submit" class="btn btn-primary">Login as Admin</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="container" style="text-align:center">
+<h4>Enter credentials to get your score : <b>{{score}}</b></h4>
+  <div class="well">
+    <form action="/getScore" method="post">
+      <div class="form-group">
+
+        <label for="id">Your Scholar Number</label>
+        <input type="text" class="form-control" id="id" name="id" />
+      </div>
+    </form>
+
+</div>
+</div>

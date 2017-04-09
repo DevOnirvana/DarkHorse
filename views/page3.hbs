@@ -1,0 +1,113 @@
+<div>
+  <div class="jumbotron" style="text-align:center">
+  <h3 style="color:green">Welcome to the Admin Section</h3>
+  <a href="/logout" style="text-color:red">Log Out</a>
+  <div style="text-color:orange">
+  <a href="/get-data" style="text-color:blue">See all entries</a>
+  </div>
+  <div style="text-color:orange">
+  <a href="/deleteAll" >Delete all entries</a>
+  </div>
+  <div style="text-color:orange">
+  <a href="/page8">See Registered People</a>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="row">
+
+    <div class="col-sm-8">
+    <div class="well">
+      <h3 style="color:blue">You may enter data in the fields provided below</h3>
+<form action="/save" method="post">
+  <div class="form-group">
+    <label for="Number">Question Number</label>
+    <input type="number" class="form-control" id="number" name="number"  />
+  </div>
+  <div class="form-group">
+    <label for="question">Question</label>
+    <input type="text" class="form-control" id="question" name="question"  />
+  </div>
+  <div class="form-group">
+    <label for="option1">Option 1</label>
+    <input type="text" class="form-control" id="option1" name="option1"  />
+  </div>
+  <div class="form-group">
+    <label for="option2">Option 2</label>
+    <input type="text" class="form-control" id="option2" name="option2"  />
+  </div>
+  <div class="form-group">
+    <label for="option3">Option 3</label>
+<input type="text" class="form-control" id="option3" name="option3"  />
+  </div>
+  <div class="form-group">
+    <label for="option4">Option 4</label>
+    <input type="text" class="form-control" id="option4" name="option4"  />
+  </div>
+  <div class="form-group">
+    <label for="optionCorrect">Correct Option</label>
+    <input type="text" class="form-control" id="optionCorrect" name="optionCorrect"  />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+  <div class="well">
+<h3 style="color:blue">Delete your entries</h3>
+<form action='/delete' method='post'>
+  <div class="form-group">
+    <label for="num">Enter the Question no. you want to remove</label>
+    <input type="number" class="form-control" id="num" name="num" />
+  </div>
+  <button type="submit"  class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!--update-->
+<div class="container">
+  <div class="well">
+<h3 style="color:blue">Fill the data to update any entry</h3>
+<form action="/update" method="post">
+  <div class="form-group">
+    <label for="num">Question Number you want to change</label>
+    <input type="number" class="form-control" id="num" name="num" />
+  </div>
+  <div class="form-group">
+    <label for="num">Question Number</label>
+    <input type="number" class="form-control" id="num1" name="num1" />
+  </div>
+  <div class="form-group">
+    <label for="question">Question</label>
+    <input type="text" class="form-control" id="question" name="question" />
+  </div>
+  <div class="form-group">
+    <label for="op1">Option 1</label>
+    <input type="text" class="form-control" id="op1" name="op1" />
+  </div>
+  <div class="input">
+    <label for="op2">Option 2</label>
+    <input type="text" class="form-control" id="op2" name="op2" />
+  </div>
+  <div class="input">
+    <label for="op3">Option 3</label>
+    <input type="text" class="form-control" id="op3" name="op3" />
+  </div>
+  <div class="input">
+    <label for="op4">Option 4</label>
+    <input type="text" class="form-control" id="op4" name="op4" />
+  </div>
+  <div class="input">
+    <label for="op">Correct Option</label>
+    <input type="text" class="form-control" id="op" name="op" />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
