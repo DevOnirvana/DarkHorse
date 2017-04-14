@@ -8,4 +8,4 @@ Go to the directory and use npm install to install all the dependencies from the
 Install Mongo Db on your system and start it using mongod.
 start the nodeJs server.
 reach the site on localhost:8000
-#hope you like it#
+#hope you liked it#
